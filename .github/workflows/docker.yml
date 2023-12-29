@@ -101,4 +101,4 @@ jobs:
           cache-from: type=registry,ref=ghcr.io/${{ steps.sanitize_names.outputs.lowercase }}/librum-build-cache:${{matrix.image}}
           cache-to: ${{ steps.cache-target.outputs.cache-to }}
           tags: ${{ steps.metadata.outputs.tags }}
-          #labels: ${{ steps.metadata.outputs.labels }}
+          labels: ${{ steps.metadata.outputs.labels }}
